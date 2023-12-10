@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Page</title>
+  </head>
+  <body>
+    <!-- Navigation Section -->
+    <nav>
+      <div class="logo">EnergeyaIE🧠</div>
+      <div class="nav-items">
+        <a href="/">Home</a>
+        <a href="/">Tips</a>
+        <a href="/">Forum</a>
+        <a href="/">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Form Section -->
+    <section id="form-section" class="form-section">
+      <form id="contact-form">
+        <h1>Contact Us for more information on our services</h1>
+
+        <!-- Email Input -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" />
+          <div class="error-message" id="email-error">
+            Please fill out this field.
+          </div>
+        </div>
+
+        <!-- Phone Number Input -->
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone" />
+          <div class="error-message" id="phone-error">
+            Please fill out this field.
+          </div>
+        </div>
+
+        <!-- Country Input -->
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" />
+          <div class="error-message" id="country-error">
+            Please fill out this field.
+          </div>
+        </div>
+
+        <!-- Name Input -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <div class="error-message" id="name-error">
+            Please fill out this field.
+          </div>
+        </div>
+
+        <!-- Message Textarea -->
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <div class="error-message" id="message-error">
+            Please fill out this field.
+          </div>
+        </div>
+
+        <!-- Send Message Button -->
+        <button type="button" onclick="validateForm()">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content-section" class="content-section">
+      <!-- Image Container -->
+      <div class="image-container">
+        <img
+          src="https://www.purevolt.ie/images/ap/residential/slate-roof/finished-solar-project-001,hero/finished-solar-project-001,ar_2.0,w_1251,h_625,.jpg"
+          alt="Image 1"
+        />
+        <img
+          src="https://house2home.ie/wp-content/uploads/2023/03/aerial-view-private-house-with-solar-panels-roof-scaled.jpg"
+          alt="Image 2"
+        />
+        <img
+          src="https://solargeneration.ie/wp-content/uploads/2020/01/Battery-Storage.jpg"
+          alt="Image 3"
+        />
+        <img
+          src="https://www.solarreviews.com/content/images/blog/post/focus_images/1354_solarpanelstinyhouse.png"
+          alt="Image 4"
+        />
+      </div>
+
+      <!-- Text Container -->
+      <div class="text-container">
+        <p>
+          Welcome to EnergeyaIE, where expertise meets innovation in the renewable energy industry. With a rich history of successful projects, we pride ourselves on being pioneers in the business. Our team brings a wealth of experience in installing cutting-edge renewable energy appliances, making us a trusted partner for your sustainable energy needs. From solar panels to advanced wind turbines, we've been at the forefront of implementing eco-friendly solutions that not only reduce your environmental footprint but also contribute to long-term energy savings. At , we are committed EnergeyaIE to staying ahead of the curve, consistently exploring innovative technologies to provide you with the most efficient and effective renewable energy solutions. Join us in shaping a greener future.
+        </p>
+        <br />
+        <p>
+          ------------------------------------------------------------------------------------------------------
+        </p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  Georgia, serif;
+    background-color: #77c3ec; /* Light blue background color */
+}
+
+/* Navbar Section Start */
+nav {
+    height: 80px;
+    background: #3498db; /* Blue color for the navbar */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #ffffff; /* White color for navbar links */
+    margin: 0 15px;
+}
+
+.logo {
+    color: #ffffff; /* White color for the logo */
+    font-size: 1.5rem;
+}
+/* Navbar Section end */
+
+
+/* Form Section Start */
+.form-section {
+    background-image: url('https://images.nationalgeographic.org/image/upload/v1652340973/EducationHub/photos/wind-farm.jpg');
+    background-size: cover;
+    color: #ffffff; /* White color for text on the form */
+    padding: 40px;
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px black ;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: start;
+    padding: 2px 0px 2px 2px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+.error-message {
+    color: #ff0000; /* Red color for error messages */
+    font-size: 14px;
+    display: none;
+    font-weight: 700;
+    text-align: start;
+    padding: 2px 0px 2px 5px;
+}
+
+button {
+    background-color: #3498db; /* Blue color for the button */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue color on hover */
+}
+/* Form Section End */
+
+/* Content Section Strat */
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.image-container img {
+    width: 48%; /* Adjust the width as needed */
+    border-radius: 8px;
+    height: 150px;
+}
+
+.text-container {
+    width: 48%; /* Adjust the width as needed */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Content Section End */
+
+
+/* Additional styles for responsiveness */
+@media screen and (max-width: 1440px) {
+    .image-container img {
+        height: 200px;
+    }
+    .text-container {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .logo {
+        padding-left: 20px;
+    }
+    .text-container {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .image-container img {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 200px;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+}
+
